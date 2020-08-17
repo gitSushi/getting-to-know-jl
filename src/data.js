@@ -17,6 +17,11 @@ export const articles = [
     href: "https://redux-illustrated.blogspot.com/2020/07/redux-illustrated.html",
     summary: "TODO"
   },
+  {
+    title: "article à écrire",
+    href: "https://dev.to",
+    summary: "TODO on dev.to. Ça rime donc c'est vrai !"
+  },
 ]
 
 export const contacts = [

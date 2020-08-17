@@ -2,21 +2,35 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white-green: rgb(242, 255, 211);
+}
+
 body {
   padding: 0.5em 4em;
   background-color: #0f0621;
-  color: rgb(242, 255, 211);
+  color: var(--white-green);
 }
 
 header {
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   word-wrap: break-word;
 }
 
+.svg-portrait {
+  overflow: visible;
+}
+
 header h1 {
   text-align: center;
+  font-size: 3em;
+}
+
+section, .footer-contact {
+  margin-bottom: 2em;
 }
 
 .section-a-propos {
@@ -25,7 +39,7 @@ header h1 {
 }
 /* .article-a-propos {
   width: 80%;
-  background-color: rgb(242, 255, 211);
+  background-color: var(--white-green);
   color: #0f0621;
   padding: 1em 2em;
   border-radius: 8px;
@@ -35,7 +49,7 @@ header h1 {
   width: 80%;
   padding: 1em 2em;
   border-radius: 8px;
-  border: 1px solid rgb(242, 255, 211);
+  border: 1px solid var(--white-green);
 }
 
 .projects {
@@ -45,7 +59,7 @@ header h1 {
 .project {
   padding: 0.5em 1em;
   border-radius: 8px;
-  border: 1px solid rgb(242, 255, 211);
+  border: 1px solid var(--white-green);
 }
 
 .project:not(:last-child){
@@ -58,6 +72,32 @@ header h1 {
   align-items: center;
 }
 
+.project-footer a {
+  text-decoration: none;
+}
+
+.project-anchor-demo {
+  color: rgb(5, 252, 219);
+}
+
+.project-anchor-repo {
+  color: rgb(211, 5, 252);
+}
+
+.section-border {
+  border-bottom: 1px solid var(--white-green);
+  padding-bottom: 1em;
+}
+
+.article-title {
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+}
+
+.article-title:hover {
+  color: rgb(2, 106, 175);
+}
+
 .footer-ul {
   list-style-type: none;
   display: flex;
@@ -68,7 +108,7 @@ header h1 {
 }
 
 .footer-ul a {
-  color: rgb(242, 255, 211);
+  color: var(--white-green);
   transition: color 1s ease-out;
 }
 
@@ -80,16 +120,12 @@ header h1 {
   body {
     padding: 0.5em;
   }
+
   header {
     flex-direction: column-reverse;
   }
-  .footer-ul {
-    /* width: 600px; */
-  }
-}
 
-@media (max-width:360px) {
-  .footer-ul {
-    /* width: 300px; */
+  header h1 {
+    font-size: 2em;
   }
 }
