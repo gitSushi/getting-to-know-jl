@@ -6,6 +6,7 @@ import Rellax from "rellax";
 
 function App() {
   const refPathEyes = useRef(null);
+
   useEffect(() => {
     TweenMax.to(refPathEyes.current, 0.8, {
       attr: {
@@ -14,7 +15,8 @@ function App() {
       repeat: 10,
       yoyo: true
     });
-    const rellax = new Rellax(".rellax", {
+
+    new Rellax(".rellax", {
       breakpoints: [576, 768, 1024]
     });
   });
@@ -30,7 +32,8 @@ function App() {
       >
         <svg
           className="svg-portrait"
-          viewbox="0 0 400 550"
+          viewBox="0 0 400 550"
+          xmlns="http://www.w3.org/2000/svg"
           width="400"
           height="550"
         >
@@ -53,7 +56,7 @@ function App() {
         <h1
           className="rellax"
           data-rellax-speed="0"
-          data-rellax-xs-speed="-3" 
+          data-rellax-xs-speed="-3"
           data-rellax-mobile-speed="-1.7"
           data-rellax-tablet-speed="-5"
           data-rellax-desktop-speed="0"
@@ -63,29 +66,39 @@ function App() {
       </header>
       <section className="section-a-propos">
         <article className="article-a-propos">
-          <h2>Qui suis-je</h2>
+          <h2>
+            <i class="fas fa-user"></i> Qui suis-je
+          </h2>
           <p>
             A mes yeux, la plus belle forme d'art est exprimée par un travail à
-            la fois intellectuelle que manuel. De plus c'est la parfaite
+            la fois intellectuel et manuel. De plus c'est la parfaite
             activité pour rester sain de corps et d'esprit.
             <br />
             De manière similaire, la programmation informatique est composée
             d'une étape de plannification suivi d'une étape de construction.
             Cependant il importe peu la quantité d'effort quand vient le moment
-            de construire, il n'y a pas de risque de suer. Il va falloir
-            reprendre le sport.
+            de construire, il n'y a pas de risque de suer. (Il va falloir
+            que je reprenne le sport. 😀)
             <br />
             Je m'appelle Jonathan Littardi. J'aime inventer, construire et
             partager mes résultats.
+            <br />
+            J'éveille mon côté enseignant en écrivant des articles en anglais
+            sur les sujets qui me tiennent à coeur.
           </p>
         </article>
       </section>
       <section>
-        <h2 className="section-border">Projets</h2>
+        <h2 className="section-border">
+          <i class="fas fa-code"></i> Projets
+        </h2>
         <div className="projects">
           {projects.map((project, index) => (
             <div key={index} className="project">
               <h3>{project.title}</h3>
+              <div>
+                <img alt={project.alt} src={project.src} />
+              </div>
               <footer className="project-footer">
                 <a
                   className="project-anchor-demo"
@@ -109,7 +122,10 @@ function App() {
         </div>
       </section>
       <section>
-        <h2 className="section-border">Articles</h2>
+        <h2 className="section-border">
+          <i class="far fa-newspaper"></i> Articles
+          <span className="article-parentheses"> (en anglais)</span>
+        </h2>
         {articles.map((article, index) => (
           <div key={index}>
             <h3>
@@ -127,6 +143,7 @@ function App() {
         ))}
       </section>
       <footer className="footer-contact">
+      <h2 className="section-border"><i class="far fa-address-card"></i> Contact</h2>
         <ul className="footer-ul">
           {contacts.map((contact, index) => (
             <div key={index}>

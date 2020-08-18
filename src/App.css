@@ -13,20 +13,22 @@ body {
 }
 
 header {
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  word-wrap: break-word;
+  height: 100vh;
 }
 
-.svg-portrait {
+svg.svg-portrait {
   overflow: visible;
+  /* width: 50vh; */
+  height: inherit;
 }
 
 header h1 {
   text-align: center;
   font-size: 3em;
+  /* align-self: center; */
 }
 
 section, .footer-contact {
@@ -52,11 +54,17 @@ section, .footer-contact {
   border: 1px solid var(--white-green);
 }
 
+.article-a-propos > h2{
+  text-indent: 0.5em;
+}
+
 .projects {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project {
+  width: 250px;
   padding: 0.5em 1em;
   border-radius: 8px;
   border: 1px solid var(--white-green);
@@ -64,6 +72,14 @@ section, .footer-contact {
 
 .project:not(:last-child){
   margin-right: 0.5em;
+}
+
+.project > h3 {
+  text-align: center;
+}
+
+.project > div > img {
+  width: 100%;
 }
 
 .project-footer {
@@ -87,6 +103,11 @@ section, .footer-contact {
 .section-border {
   border-bottom: 1px solid var(--white-green);
   padding-bottom: 1em;
+  text-indent: 0.5em;
+}
+
+h2 .article-parentheses {
+  font-size: 16px;
 }
 
 .article-title {
@@ -127,5 +148,11 @@ section, .footer-contact {
 
   header h1 {
     font-size: 2em;
+  }
+}
+
+@media (orientation: landscape){
+  header {
+    flex-direction: row;
   }
 }
