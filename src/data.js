@@ -22,6 +22,16 @@ export const projects = [
   }
 ];
 
+export const codepens = [
+  {
+    hash: "abOmzKE",
+    title: "sushi • 鮨"
+  },
+  {
+    hash: "YzPMwMw",
+    title: "neumorphism, heartly"
+  }
+]
 export const articles = [
   {
     title: "Closures or how to safely count your chickens",

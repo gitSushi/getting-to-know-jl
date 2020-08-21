@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./App.css";
-import { contacts, articles, projects } from "./data";
+import { contacts, articles, projects, codepens } from "./data";
 import { TweenMax } from "gsap";
 import Rellax from "rellax";
 
@@ -57,7 +57,7 @@ function App() {
           className="rellax"
           data-rellax-speed="0"
           data-rellax-xs-speed="-3"
-          data-rellax-mobile-speed="-1.7"
+          data-rellax-mobile-speed="0"
           data-rellax-tablet-speed="-5"
           data-rellax-desktop-speed="0"
         >
@@ -71,14 +71,14 @@ function App() {
           </h2>
           <p>
             A mes yeux, la plus belle forme d'art est exprimée par un travail à
-            la fois intellectuel et manuel. De plus c'est la parfaite
-            activité pour rester sain de corps et d'esprit.
+            la fois intellectuel et manuel. De plus c'est la parfaite activité
+            pour rester sain de corps et d'esprit.
             <br />
             De manière similaire, la programmation informatique est composée
             d'une étape de plannification suivi d'une étape de construction.
             Cependant il importe peu la quantité d'effort quand vient le moment
-            de construire, il n'y a pas de risque de suer. (Il va falloir
-            que je reprenne le sport. 😀)
+            de construire, il n'y a pas de risque de suer – il va falloir que je
+            reprenne le sport.
             <br />
             Je m'appelle Jonathan Littardi. J'aime inventer, construire et
             partager mes résultats.
@@ -120,6 +120,40 @@ function App() {
             </div>
           ))}
         </div>
+        <div className="codepen-container">
+          {codepens.map((codepen, index) => (
+            <div key={index}>
+              <p
+                className="codepen"
+                data-height="265"
+                data-theme-id="dark"
+                data-default-tab="result"
+                data-user="gitsushi"
+                data-slug-hash={codepen.hash}
+                data-pen-title={codepen.title}
+              >
+                <span>
+                  See the Pen{" "}
+                  <a href={`https://codepen.io/gitsushi/pen/${codepen.hash}`}>
+                    {codepen.title}
+                  </a>{" "}
+                  by gitSushi (
+                  <a href="https://codepen.io/gitsushi">@gitsushi</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+                </span>
+              </p>
+            </div>
+          ))}
+        </div>
+        <iframe
+          title="totoro"
+          src="https://editor.p5js.org/lossushi/embed/M8i5bWTI8"
+        ></iframe>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://editor.p5js.org/lossushi/sketches/M8i5bWTI8"
+        >code en p5js editor</a>
       </section>
       <section>
         <h2 className="section-border">
@@ -143,7 +177,9 @@ function App() {
         ))}
       </section>
       <footer className="footer-contact">
-      <h2 className="section-border"><i class="far fa-address-card"></i> Contact</h2>
+        <h2 className="section-border">
+          <i class="far fa-address-card"></i> Contact
+        </h2>
         <ul className="footer-ul">
           {contacts.map((contact, index) => (
             <div key={index}>

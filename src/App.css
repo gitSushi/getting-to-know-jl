@@ -31,7 +31,8 @@ header h1 {
   /* align-self: center; */
 }
 
-section, .footer-contact {
+section,
+.footer-contact {
   margin-bottom: 2em;
 }
 
@@ -54,12 +55,13 @@ section, .footer-contact {
   border: 1px solid var(--white-green);
 }
 
-.article-a-propos > h2{
+.article-a-propos > h2 {
   text-indent: 0.5em;
 }
 
 .projects {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -68,9 +70,10 @@ section, .footer-contact {
   padding: 0.5em 1em;
   border-radius: 8px;
   border: 1px solid var(--white-green);
+  margin-bottom: 0.5em;
 }
 
-.project:not(:last-child){
+.project:not(:last-child) {
   margin-right: 0.5em;
 }
 
@@ -98,6 +101,32 @@ section, .footer-contact {
 
 .project-anchor-repo {
   color: rgb(211, 5, 252);
+}
+
+.codepen-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cp_embed_wrapper {
+  width: 400px;
+}
+
+.codepen {
+  height: 265px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+iframe[title="totoro"] {
+  width: 454px;
+  height: 454px;
 }
 
 .section-border {
@@ -133,11 +162,11 @@ h2 .article-parentheses {
   transition: color 1s ease-out;
 }
 
-.footer-ul div:hover li a{
+.footer-ul div:hover li a {
   color: rgb(5, 202, 252);
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   body {
     padding: 0.5em;
   }
@@ -149,9 +178,13 @@ h2 .article-parentheses {
   header h1 {
     font-size: 2em;
   }
+
+  .cp_embed_wrapper {
+    width: 100%;
+  }
 }
 
-@media (orientation: landscape){
+@media (orientation: landscape) {
   header {
     flex-direction: row;
   }
