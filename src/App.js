@@ -67,7 +67,7 @@ function App() {
       <section className="section-a-propos">
         <article className="article-a-propos">
           <h2>
-            <i class="fas fa-user"></i> Qui suis-je
+            <i className="fas fa-user"></i> Qui suis-je
           </h2>
           <p>
             A mes yeux, la plus belle forme d'art est exprimée par un travail à
@@ -90,7 +90,7 @@ function App() {
       </section>
       <section>
         <h2 className="section-border">
-          <i class="fas fa-code"></i> Projets
+          <i className="fas fa-code"></i> Projets
         </h2>
         <div className="projects">
           {projects.map((project, index) => (
@@ -120,32 +120,35 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="codepen-container">
-          {codepens.map((codepen, index) => (
-            <div key={index}>
-              <p
-                className="codepen"
-                data-height="265"
-                data-theme-id="dark"
-                data-default-tab="result"
-                data-user="gitsushi"
-                data-slug-hash={codepen.hash}
-                data-pen-title={codepen.title}
-              >
-                <span>
-                  See the Pen{" "}
-                  <a href={`https://codepen.io/gitsushi/pen/${codepen.hash}`}>
-                    {codepen.title}
-                  </a>{" "}
-                  by gitSushi (
-                  <a href="https://codepen.io/gitsushi">@gitsushi</a>) on{" "}
-                  <a href="https://codepen.io">CodePen</a>.
-                </span>
-              </p>
-            </div>
-          ))}
+        <div className="snippet-container">
+          <h3 className="snippet">Code snippets</h3>
+          <div className="codepen-container">
+            {codepens.map((codepen, index) => (
+              <div key={index} className="codepen-div">
+                <p
+                  className="codepen"
+                  data-height="265"
+                  data-theme-id="dark"
+                  data-default-tab="result"
+                  data-user="gitsushi"
+                  data-slug-hash={codepen.hash}
+                  data-pen-title={codepen.title}
+                >
+                  <span>
+                    See the Pen{" "}
+                    <a href={`https://codepen.io/gitsushi/pen/${codepen.hash}`}>
+                      {codepen.title}
+                    </a>{" "}
+                    by gitSushi (
+                    <a href="https://codepen.io/gitsushi">@gitsushi</a>) on{" "}
+                    <a href="https://codepen.io">CodePen</a>.
+                  </span>
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-        <iframe
+        {/* <iframe
           title="totoro"
           src="https://editor.p5js.org/lossushi/embed/M8i5bWTI8"
         ></iframe>
@@ -153,11 +156,11 @@ function App() {
           rel="noopener noreferrer"
           target="_blank"
           href="https://editor.p5js.org/lossushi/sketches/M8i5bWTI8"
-        >code en p5js editor</a>
+        >code en p5js editor</a> */}
       </section>
       <section>
         <h2 className="section-border">
-          <i class="far fa-newspaper"></i> Articles
+          <i className="far fa-newspaper"></i> Articles
           <span className="article-parentheses"> (en anglais)</span>
         </h2>
         {articles.map((article, index) => (
@@ -178,7 +181,7 @@ function App() {
       </section>
       <footer className="footer-contact">
         <h2 className="section-border">
-          <i class="far fa-address-card"></i> Contact
+          <i className="far fa-address-card"></i> Contact
         </h2>
         <ul className="footer-ul">
           {contacts.map((contact, index) => (

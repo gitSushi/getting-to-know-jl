@@ -33,7 +33,7 @@ header h1 {
 
 section,
 .footer-contact {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .section-a-propos {
@@ -103,6 +103,18 @@ section,
   color: rgb(211, 5, 252);
 }
 
+.snippet-container {
+  margin: 0 2em;
+}
+
+.snippet {
+  max-width: 280px;
+  margin: 2em auto 1.5em;
+  text-align: center;
+  border-top: 1px solid var(--white-green);
+  border-bottom: 1px solid var(--white-green);
+}
+
 .codepen-container {
   display: flex;
   justify-content: space-evenly;
@@ -111,6 +123,10 @@ section,
 
 .cp_embed_wrapper {
   width: 400px;
+}
+
+.codepen-div:not(:last-child) {
+  margin-bottom: 1em;
 }
 
 .codepen {
