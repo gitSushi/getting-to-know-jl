@@ -59,6 +59,16 @@ section,
   text-indent: 0.5em;
 }
 
+.my-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+}
+
+.my-icon > g {
+  fill: var(--white-green);
+}
+
 .projects {
   display: flex;
   justify-content: center;

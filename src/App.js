@@ -67,9 +67,19 @@ function App() {
       <section className="section-a-propos">
         <article className="article-a-propos">
           <h2>
-            <i className="fas fa-user"></i> Qui suis-je
+            <svg
+              className="my-icon"
+              aria-hidden="true"
+              viewBox="0 0 600 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path d="M150,200 a50 50 0 1 1 300 0 q0,150 -150,200 q-150,-50 -150,-200 M100,550 q-50,0 -50,-50 q0,-100 150,-100 q100,100 200,0 q150,0 150,100 q0,50 -50,50z" />
+              </g>
+            </svg>{" "}
+            Qui suis-je
           </h2>
-          <p>
+          {/* <p>
             A mes yeux, la plus belle forme d'art est exprimée par un travail à
             la fois intellectuel et manuel. De plus c'est la parfaite activité
             pour rester sain de corps et d'esprit.
@@ -85,12 +95,42 @@ function App() {
             <br />
             J'éveille mon côté enseignant en écrivant des articles en anglais
             sur les sujets qui me tiennent à coeur.
-          </p>
+          </p> */}
+          <ul>
+            <li>Un artiste tourné développeur web.</li>
+            <li>
+              Mon cursus m'offre une vue unique sur le design, que ce soit web
+              design ou bien l'architecture d'un programme.
+            </li>
+            <li>Adepte de logique et d'ordre.</li>
+            <li>Recherche à faire ses premiers pas professionnellement.</li>
+          </ul>
         </article>
       </section>
       <section>
         <h2 className="section-border">
-          <i className="fas fa-code"></i> Projets
+          <svg
+            className="my-icon"
+            aria-hidden="true"
+            viewBox="0 0 600 600"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M20,300 q0,-5 5,-5 h200 q5,0 5,5 v60 q0,5 -5,5 h-130 q-5,0 -5,5 v130 q0,5 -5,5 h-60 q-5,0 -5,-5z"
+                transform="rotate(-45 20 300)"
+              />
+              <path
+                d="M580,300 q0,-5 5,-5 h200 q5,0 5,5 v60 q0,5 -5,5 h-130 q-5,0 -5,5 v130 q0,5 -5,5 h-60 q-5,0 -5,-5z"
+                transform="rotate(135 580 300)"
+              />
+              <path
+                d="M265,105 q0,-5 5,-5 h60 q5,0 5,5 v390  q0,5 -5,5 h-60 q-5,0 -5,-5z"
+                transform="rotate(15 300 300)"
+              />
+            </g>
+          </svg>{" "}
+          Projets
         </h2>
         <div className="projects">
           {projects.map((project, index) => (
@@ -133,6 +173,7 @@ function App() {
                   data-user="gitsushi"
                   data-slug-hash={codepen.hash}
                   data-pen-title={codepen.title}
+                  data-preview="true"
                 >
                   <span>
                     See the Pen{" "}
@@ -193,10 +234,14 @@ function App() {
                   href={contact.href}
                   title={contact.title}
                 >
-                  <i
-                    className={`fab ${contact.icon} fa-2x`}
-                    aria-hidden="true"
-                  />
+                  {contact.hasOwnProperty("svg") ? (
+                    contact.svg
+                  ) : (
+                    <i
+                      className={`fab ${contact.icon} fa-2x`}
+                      aria-hidden="true"
+                    />
+                  )}
                 </a>
               </li>
             </div>
