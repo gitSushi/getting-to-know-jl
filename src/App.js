@@ -74,7 +74,7 @@ function App() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <g>
-                <path d="M150,200 a50 50 0 1 1 300 0 q0,150 -150,200 q-150,-50 -150,-200 M100,550 q-50,0 -50,-50 q0,-100 150,-100 q100,100 200,0 q150,0 150,100 q0,50 -50,50z" />
+                <path d="M150,200 a50 50 0 1 1 300 0 q0,150 -150,200 q-150,-50 -150,-200 m-50,350 q-50,0 -50,-50 q0,-100 150,-100 q100,100 200,0 q150,0 150,100 q0,50 -50,50z" />
               </g>
             </svg>{" "}
             Qui suis-je
@@ -201,7 +201,17 @@ function App() {
       </section>
       <section>
         <h2 className="section-border">
-          <i className="far fa-newspaper"></i> Articles
+          <svg
+            className="my-icon"
+            aria-hidden="true"
+            viewBox="0 0 600 600"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path d="M100,60 q0,-10 10,-10 h255 q10,0 10,10 v105 q0,10 10,10 h105 q10,0 10,10 v355 q0,10 -10,10 h-380 q-10,0 -10,-10zM410,60 q-10,-10 -10,0 v80 q0,10 10,10 h80 q10,0 0,-10zM175,175 a10 10 0 1 0 0 25 h125 a10 10 0 1 0 0 -25 h-125zM175,250 a10 10 0 1 0 0 25 h250 a10 10 0 1 0 0 -25 h-250zM175,325 a10 10 0 1 0 0 25 h250 a10 10 0 1 0 0 -25 h-250zM175,400 a10 10 0 1 0 0 25 h250 a10 10 0 1 0 0 -25 h-250z" />
+            </g>
+          </svg>{" "}
+          Articles
           <span className="article-parentheses"> (en anglais)</span>
         </h2>
         {articles.map((article, index) => (
@@ -222,7 +232,20 @@ function App() {
       </section>
       <footer className="footer-contact">
         <h2 className="section-border">
-          <i className="far fa-address-card"></i> Contact
+          <svg
+            className="my-icon"
+            aria-hidden="true"
+            viewBox="0 0 600 600"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path d="M250,100 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
+              <path d="M76.8,333.3 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
+              <path d="M423.2,333.3 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
+              <path d="M204,185 a150 150 0 0 0 -50,80 l-29,-6 a170,170 0 0 1 63,-100 m208,26 a150,150 0 0 1 50,80 l29,-7 a170,170 0 0 0 -62,-98 m-47,276 a150,150 0 0 1 -132,0 l-15,24 a180,180 0 0 0 162,0z" />
+            </g>
+          </svg>{" "}
+          Contact
         </h2>
         <ul className="footer-ul">
           {contacts.map((contact, index) => (

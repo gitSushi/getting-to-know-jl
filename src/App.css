@@ -183,13 +183,23 @@ h2 .article-parentheses {
   max-width: 100%;
 }
 
+/* !!! START TO DELETE WHEN DONE WITH SVG */
 .footer-ul a {
   color: var(--white-green);
   transition: color 1s ease-out;
 }
-
 .footer-ul div:hover li a {
   color: rgb(5, 202, 252);
+}
+/* END !!! TO DELETE WHEN DONE WITH SVG */
+
+.footer-ul a .my-icon > g {
+  fill: var(--white-green);
+  transition: fill 1s ease-out;
+}
+
+.footer-ul div:hover li a .my-icon > g {
+  fill: rgb(5, 202, 252);
 }
 
 @media (max-width: 768px) {
