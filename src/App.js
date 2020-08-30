@@ -231,6 +231,33 @@ function App() {
         ))}
       </section>
       <footer className="footer-contact">
+        <div className="container">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-lg-6">
+              <p className="signature">Jonathan Littardi</p>
+            </div>
+            <div className="col-lg-6">
+              <ul className="footer-ul">
+                {contacts.map((contact, index) => (
+                  <div key={index}>
+                    <li>
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={contact.href}
+                        title={contact.title}
+                      >
+                        {contact.svg}
+                      </a>
+                    </li>
+                  </div>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* <footer className="footer-contact">
         <h2 className="section-border">
           <svg
             className="my-icon"
@@ -257,20 +284,13 @@ function App() {
                   href={contact.href}
                   title={contact.title}
                 >
-                  {contact.hasOwnProperty("svg") ? (
-                    contact.svg
-                  ) : (
-                    <i
-                      className={`fab ${contact.icon} fa-2x`}
-                      aria-hidden="true"
-                    />
-                  )}
+                  {contact.svg}
                 </a>
               </li>
             </div>
           ))}
         </ul>
-      </footer>
+      </footer> */}
     </div>
   );
 }

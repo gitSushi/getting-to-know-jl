@@ -34,6 +34,10 @@ export const codepens = [
   {
     hash: "YzPMwMw",
     title: "neumorphism, heartly"
+  },
+  {
+    hash: "LYNxvPZ",
+    title: "gsap animate boxShadow"
   }
 ];
 export const articles = [
@@ -90,6 +94,23 @@ function Github() {
   );
 }
 
+function Codepen() {
+  return (
+    <div>
+      <svg
+        className="my-icon"
+        aria-hidden="true"
+        viewBox="0 0 600 600"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path d="M547.285,204.704 l-234,-156 c-7.987,-4.915 -16.511,-4.96 -24.571,0 l-234,156 c-6,3.999 -9.714,11.143 -9.714,18.285 v155.999 c0,7.143 3.714,14.286 9.715,18.286 l234,156.022 c7.987,4.915 16.511,4.96 24.571,0 l234,-156.022 c6,-3.999 9.715,-11.143 9.715,-18.286 v-155.999 c-0.001,-7.142 -3.715,-14.286 -9.716,-18.285z m-224.285,-96.573 l172.286,114.858 -76.857,51.429 l-95.428,-63.715 v-102.572z m-44,0 v102.572 l-95.429,63.715 -76.857,-51.429 l172.286,-114.868z m-190,156.001 l55.143,36.857 l-55.143,36.857 v-73.714z m190,229.715 l-172.286,-114.858 l76.857,-51.429 l95.429,63.718 v102.572z m22,-140.858 l-77.715,-52 77.715,-52 77.715,52 -77.715,52z m22,140.858 v-102.572 l95.429,-63.715 76.857,51.429 l-172.286,114.858z m190,-156.001 l-55.143,-36.857 l55.143,-36.857 v73.714z" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
 export const contacts = [
   {
     title: "twitter",
@@ -98,13 +119,12 @@ export const contacts = [
   },
   {
     title: "github",
-    icon: "fa-github",
     href: "https://github.com/gitSushi",
     svg: Github()
   },
   {
     title: "codepen",
-    icon: "fa-codepen",
-    href: "https://codepen.io/gitsushi"
+    href: "https://codepen.io/gitsushi",
+    svg: Codepen()
   }
 ];

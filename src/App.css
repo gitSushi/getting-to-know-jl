@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Marck+Script&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,8 @@ body {
   padding: 0.5em 4em;
   background-color: #0f0621;
   color: var(--white-green);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
 }
 
 header {
@@ -174,6 +178,82 @@ h2 .article-parentheses {
   color: rgb(2, 106, 175);
 }
 
+.footer-contact {
+  margin-top: 5em;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-evenly;  
+}
+
 .footer-ul {
   list-style-type: none;
   display: flex;
@@ -183,15 +263,10 @@ h2 .article-parentheses {
   max-width: 100%;
 }
 
-/* !!! START TO DELETE WHEN DONE WITH SVG */
-.footer-ul a {
-  color: var(--white-green);
-  transition: color 1s ease-out;
+.footer-ul a .my-icon {
+  width: 50px;
+  height: 50px;
 }
-.footer-ul div:hover li a {
-  color: rgb(5, 202, 252);
-}
-/* END !!! TO DELETE WHEN DONE WITH SVG */
 
 .footer-ul a .my-icon > g {
   fill: var(--white-green);
@@ -200,6 +275,12 @@ h2 .article-parentheses {
 
 .footer-ul div:hover li a .my-icon > g {
   fill: rgb(5, 202, 252);
+}
+
+.signature {
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  font-size: 2em;
 }
 
 @media (max-width: 768px) {
