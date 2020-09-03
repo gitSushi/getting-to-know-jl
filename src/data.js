@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "The Daily Journo",
-    src: "./images/Screenshot_2020-09-03 The Daily Journo App.png",
+    src: "https://raw.githubusercontent.com/gitSushi/getting-to-know-jl/master/src/images/Screenshot_2020-09-03%20The%20Daily%20Journo%20App.png",
     alt: "The Daily Journo",
     demo: "https://gitsushi.github.io/the-daily-journo/",
     repo: "https://github.com/gitSushi/the-daily-journo"
