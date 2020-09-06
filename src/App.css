@@ -21,6 +21,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-bottom: 2em;
 }
 
 svg.svg-portrait {
@@ -28,6 +29,16 @@ svg.svg-portrait {
   /* width: 50vh; */
   height: inherit;
 }
+.svg-portrait #left-index {
+	transform-origin: 66.5% 58%;
+}
+.svg-portrait #left-middle-finger {
+	transform-origin: 70% 60%;
+}
+/* !!! rotate3d ONLY WORKS WITHOUT transform-origin !!! */
+/* .svg-portrait #left-thumb {
+	transform-origin: 70% 60%;
+} */
 
 header h1 {
   text-align: center;
@@ -301,8 +312,26 @@ h2 .article-parentheses {
   }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 1280px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1000px) {
+  .svg-portrait {
+    width: 100vw;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 812px) {
   header {
     flex-direction: row;
   }
+  .svg-portrait {
+    width: 100vmin;
+  }
 }
+
+
+
