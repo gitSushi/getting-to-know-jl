@@ -26,7 +26,6 @@ header {
 
 svg.svg-portrait {
   overflow: visible;
-  /* width: 50vh; */
   height: inherit;
 }
 .svg-portrait #left-index {
@@ -35,15 +34,10 @@ svg.svg-portrait {
 .svg-portrait #left-middle-finger {
 	transform-origin: 70% 60%;
 }
-/* !!! rotate3d ONLY WORKS WITHOUT transform-origin !!! */
-/* .svg-portrait #left-thumb {
-	transform-origin: 70% 60%;
-} */
 
 header h1 {
   text-align: center;
   font-size: 3em;
-  /* align-self: center; */
 }
 
 section,
@@ -55,13 +49,6 @@ section,
   display: flex;
   justify-content: center;
 }
-/* .article-a-propos {
-  width: 80%;
-  background-color: var(--white-green);
-  color: #0f0621;
-  padding: 1em 2em;
-  border-radius: 8px;
-} */
 
 .article-a-propos {
   width: 80%;
@@ -190,7 +177,12 @@ h2 .article-parentheses {
 }
 
 .footer-contact {
-  margin-top: 5em;
+  margin-top: 4em;
+}
+
+.footer-contact > .container {
+	border-top: 1px solid var(--white-green);
+	padding-top: 1em;
 }
 
 .container {
