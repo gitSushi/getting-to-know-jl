@@ -10,11 +10,12 @@ function App() {
   useEffect(() => {
     function leftIndex(){
       const tl = new TimelineMax();
-      tl.to("#left-index", 0.2, {
+      tl.to(refLeftIndex.current, {
         transformOrigin: "25px 24px",
         rotation: 10,
         repeat: 1,
-        yoyo: true
+        yoyo: true,
+        duration: 0.2
       });
       return tl;
     }
