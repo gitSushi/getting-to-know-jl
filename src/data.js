@@ -38,6 +38,10 @@ export const codepens = [
   {
     hash: "LYNxvPZ",
     title: "gsap animate boxShadow"
+  },
+  {
+    hash: "xxVyVGx",
+    title: "hover over Totoro"
   }
 ];
 export const articles = [

@@ -1,42 +1,111 @@
 import React, { useRef, useEffect } from "react"; 
 import "./App.css";
 import { contacts, articles, projects, codepens } from "./data";
-// import { TweenMax } from "gsap";
+import { TimelineMax } from "gsap";
 import Rellax from "rellax";
 
 function App() {
   const refLeftIndex = useRef(null);
 
   useEffect(() => {
-    // TweenMax.to(refLeftIndex.current, 1, {
-    //   transformOrigin: "10% 20%",
-    //   rotation: 10,
-    //   repeat: 10,
-    //   yoyo: true
-    // });
+    function leftIndex(){
+      const tl = new TimelineMax();
+      tl.to("#left-index", 0.2, {
+        transformOrigin: "25px 24px",
+        rotation: 10,
+        repeat: 1,
+        yoyo: true
+      });
+      return tl;
+    }
+    
+    function leftMiddleFinger(){
+      const tl = new TimelineMax();
+      tl.to("#left-middle-finger", 0.2, {
+        transformOrigin: "28px 24px",
+        rotation: 10,
+        repeat: 1,
+        yoyo: true,
+      });
+      return tl;
+    }
+    
+    function leftThumb(){
+      const tl = new TimelineMax();
+      tl.to("#left-thumb", 0.3, {
+        transformOrigin: "20px 23px",
+        rotation: 10,
+        repeat: 1,
+        yoyo: true
+      });
+      return tl;
+    }
+    
+    function rightIndex(){
+      const tl = new TimelineMax();
+      tl.to("#right-index", 0.2, {
+        transformOrigin: "26px 18px",
+        rotation: 5,
+        scale: 0.93,
+        repeat: 1,
+        yoyo: true
+      });
+      return tl;
+    }
+    
+    function rightMiddleFinger(){
+      const tl = new TimelineMax();
+      tl.to("#right-middle-finger", 0.2, {
+        transformOrigin: "31px 28px",
+        rotation: 7,
+        scale: 0.93,
+        repeat: 1,
+        yoyo: true,
+      });
+      return tl;
+    }
+    
+    function rightRing(){
+      const tl = new TimelineMax();
+      tl.to("#right-ring", 0.3, {
+        transformOrigin: "34px 31px",
+        rotation: -5,
+        scale: 0.93,
+        repeat: 1,
+        yoyo: true
+      });
+      return tl;
+    }
+    
+    function rightPinkie(){
+      const tl = new TimelineMax();
+      tl.to("#right-pinkie", 0.4, {
+        transformOrigin: "32px 30px",
+        rotation: -5,
+        scale: 0.95,
+        repeat: 1,
+        yoyo: true
+      });
+      return tl;
+    }
+    
+    const masterTimeline = new TimelineMax({ 
+      repeat: 10,
+      repeatDelay: 0.3
+    });
+    
+    masterTimeline
+      .add(leftIndex())
+      .add(leftMiddleFinger(), "-=0.5")
+      .add(leftThumb(), "+=0.5")
+      .add(rightIndex(), "-=0.4")
+      .add(rightMiddleFinger())
+      .add(rightRing(), "+=0.2")
+      .add(rightIndex())
+      .add(leftThumb(), "+=0.1")
+      .add(rightPinkie(), "+=0.3")
+      .add(leftIndex(), "-=0.2")
 
-    document
-    .querySelector("#left-index")
-    .animate(
-      { transform: ["rotate(0deg)", "rotate(10deg)", "rotate(0deg)"] },
-      { duration: 1000, iterations: 10 }
-    );
-
-    //Infinity
-
-    document
-    .querySelector("#left-middle-finger")
-    .animate(
-      { transform: ["rotate(0deg)", "rotate(7deg)", "rotate(0deg)"] },
-      { delay: 500, duration: 1000, iterations: 10 }
-    );
-
-    document
-    .querySelector("#left-thumb")
-    .animate(
-      { transform: ["rotate3d(1, 0, 0, 0deg)", "rotate3d(1, 0, 0, 7deg)", "rotate3d(1, 0, 0, 0deg)"] },
-      { delay: 800, duration: 1000, iterations: 10 }
-    );
 
     new Rellax(".rellax", {
       breakpoints: [576, 768, 1024]
@@ -175,23 +244,6 @@ function App() {
             </svg>{" "}
             Qui suis-je
           </h2>
-          {/* <p>
-            A mes yeux, la plus belle forme d'art est exprimée par un travail à
-            la fois intellectuel et manuel. De plus c'est la parfaite activité
-            pour rester sain de corps et d'esprit.
-            <br />
-            De manière similaire, la programmation informatique est composée
-            d'une étape de plannification suivi d'une étape de construction.
-            Cependant il importe peu la quantité d'effort quand vient le moment
-            de construire, il n'y a pas de risque de suer – il va falloir que je
-            reprenne le sport.
-            <br />
-            Je m'appelle Jonathan Littardi. J'aime inventer, construire et
-            partager mes résultats.
-            <br />
-            J'éveille mon côté enseignant en écrivant des articles en anglais
-            sur les sujets qui me tiennent à coeur.
-          </p> */}
           <ul>
             <li>Un artiste tourné développeur web.</li>
             <li>
@@ -200,6 +252,14 @@ function App() {
             </li>
             <li>Adepte de logique et d'ordre.</li>
             <li>Recherche à faire ses premiers pas professionnellement.</li>
+            <li>Compétences (liste non exhaustive):
+              <ul>
+                <li>HTML • CSS/Sass • Javascript</li>
+                <li>ReactJS</li>
+                <li>Redux/React-Readux</li>
+                <li>Python</li>
+              </ul>
+            </li>
           </ul>
         </article>
       </section>
@@ -285,15 +345,6 @@ function App() {
             ))}
           </div>
         </div>
-        {/* <iframe
-          title="totoro"
-          src="https://editor.p5js.org/lossushi/embed/M8i5bWTI8"
-        ></iframe>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://editor.p5js.org/lossushi/sketches/M8i5bWTI8"
-        >code en p5js editor</a> */}
       </section>
       <section>
         <h2 className="section-border">
