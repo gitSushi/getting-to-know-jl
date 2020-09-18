@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/getting-to-know-jl/static/css/main.30982dd1.chunk.css",
+    "main.js": "/getting-to-know-jl/static/js/main.3014e2da.chunk.js",
+    "main.js.map": "/getting-to-know-jl/static/js/main.3014e2da.chunk.js.map",
+    "runtime-main.js": "/getting-to-know-jl/static/js/runtime-main.f82ca7cf.js",
+    "runtime-main.js.map": "/getting-to-know-jl/static/js/runtime-main.f82ca7cf.js.map",
+    "static/js/2.578b4a7c.chunk.js": "/getting-to-know-jl/static/js/2.578b4a7c.chunk.js",
+    "static/js/2.578b4a7c.chunk.js.map": "/getting-to-know-jl/static/js/2.578b4a7c.chunk.js.map",
+    "index.html": "/getting-to-know-jl/index.html",
+    "precache-manifest.88b6a4de59ea5b95a499635588e04e55.js": "/getting-to-know-jl/precache-manifest.88b6a4de59ea5b95a499635588e04e55.js",
+    "service-worker.js": "/getting-to-know-jl/service-worker.js",
+    "static/css/main.30982dd1.chunk.css.map": "/getting-to-know-jl/static/css/main.30982dd1.chunk.css.map",
+    "static/js/2.578b4a7c.chunk.js.LICENSE.txt": "/getting-to-know-jl/static/js/2.578b4a7c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f82ca7cf.js",
+    "static/js/2.578b4a7c.chunk.js",
+    "static/css/main.30982dd1.chunk.css",
+    "static/js/main.3014e2da.chunk.js"
+  ]
+}
