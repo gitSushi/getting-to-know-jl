@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"; 
 import "./App.css";
 import { contacts, articles, projects, codepens } from "./data";
-import { TimelineMax } from "gsap";
+import { gsap, TimelineMax } from "gsap";
 import Rellax from "rellax";
 
 function App() {
@@ -9,15 +9,15 @@ function App() {
 
   useEffect(() => {
     function leftIndex(){
-      const tl = new TimelineMax();
-      tl.to(refLeftIndex.current, {
+      //const tl = new TimelineMax();
+      return gsap.to(refLeftIndex.current, {
         transformOrigin: "25px 24px",
         rotation: 10,
         repeat: 1,
         yoyo: true,
         duration: 0.2
       });
-      return tl;
+      //return tl;
     }
     
     function leftMiddleFinger(){
@@ -90,7 +90,7 @@ function App() {
       return tl;
     }
     
-    const masterTimeline = new TimelineMax({ 
+    const masterTimeline = gsap.timeline({ 
       repeat: 10,
       repeatDelay: 0.3
     });
