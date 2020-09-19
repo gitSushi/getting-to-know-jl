@@ -97,15 +97,6 @@ function App() {
     
     masterTimeline
       .add(leftIndex())
-      // .add(leftMiddleFinger(), "-=0.5")
-      // .add(leftThumb(), "+=0.5")
-      // .add(rightIndex(), "-=0.4")
-      // .add(rightMiddleFinger())
-      // .add(rightRing(), "+=0.2")
-      // .add(rightIndex())
-      // .add(leftThumb(), "+=0.1")
-      // .add(rightPinkie(), "+=0.3")
-      // .add(leftIndex(), "-=0.2")
 
 
     new Rellax(".rellax", {
