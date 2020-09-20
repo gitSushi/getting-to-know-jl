@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"; 
 import "./App.css";
 import { contacts, articles, projects, codepens } from "./data";
-import { gsap, TimelineMax } from "gsap";
+import { gsap } from "gsap";
 import Rellax from "rellax";
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
     function rightMiddleFinger(){
       return gsap.to(refRightMiddleFinger.current, {
         transformOrigin: "31px 28px",
-        rotation: 7,
+        rotation: -3,
         scale: 0.93,
         repeat: 1,
         yoyo: true,
@@ -84,13 +84,13 @@ function App() {
         scale: 0.95,
         repeat: 1,
         yoyo: true,
-        duration: 0.4
+        duration: 0.3
       });
     }
     
     const masterTimeline = gsap.timeline({ 
       repeat: 10,
-      repeatDelay: 0.3
+      repeatDelay: 0.4
     });
     
     masterTimeline
@@ -100,6 +100,7 @@ function App() {
       .add(rightIndex(), "-=0.4")
       .add(rightMiddleFinger())
       .add(rightRing(), "+=0.2")
+      .add(leftMiddleFinger(), "-=0.2")
       .add(rightIndex())
       .add(leftThumb(), "+=0.1")
       .add(rightPinkie(), "+=0.3")
