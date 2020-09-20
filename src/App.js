@@ -89,7 +89,7 @@ function App() {
     }
     
     const masterTimeline = gsap.timeline({ 
-      repeat: 10,
+      repeat: -1,
       repeatDelay: 0.4
     });
     
