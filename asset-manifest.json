@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/getting-to-know-jl/static/css/main.30982dd1.chunk.css",
-    "main.js": "/getting-to-know-jl/static/js/main.d4765ab9.chunk.js",
-    "main.js.map": "/getting-to-know-jl/static/js/main.d4765ab9.chunk.js.map",
+    "main.js": "/getting-to-know-jl/static/js/main.f70db2fe.chunk.js",
+    "main.js.map": "/getting-to-know-jl/static/js/main.f70db2fe.chunk.js.map",
     "runtime-main.js": "/getting-to-know-jl/static/js/runtime-main.f82ca7cf.js",
     "runtime-main.js.map": "/getting-to-know-jl/static/js/runtime-main.f82ca7cf.js.map",
     "static/js/2.55da0553.chunk.js": "/getting-to-know-jl/static/js/2.55da0553.chunk.js",
     "static/js/2.55da0553.chunk.js.map": "/getting-to-know-jl/static/js/2.55da0553.chunk.js.map",
     "index.html": "/getting-to-know-jl/index.html",
-    "precache-manifest.920950afefa309dd0b186344d19a3bf4.js": "/getting-to-know-jl/precache-manifest.920950afefa309dd0b186344d19a3bf4.js",
+    "precache-manifest.892680f9cabd5a7959ed64d114315038.js": "/getting-to-know-jl/precache-manifest.892680f9cabd5a7959ed64d114315038.js",
     "service-worker.js": "/getting-to-know-jl/service-worker.js",
     "static/css/main.30982dd1.chunk.css.map": "/getting-to-know-jl/static/css/main.30982dd1.chunk.css.map",
     "static/js/2.55da0553.chunk.js.LICENSE.txt": "/getting-to-know-jl/static/js/2.55da0553.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f82ca7cf.js",
     "static/js/2.55da0553.chunk.js",
     "static/css/main.30982dd1.chunk.css",
-    "static/js/main.d4765ab9.chunk.js"
+    "static/js/main.f70db2fe.chunk.js"
   ]
 }
