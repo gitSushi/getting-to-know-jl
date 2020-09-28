@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ffe2b1bb5a4a1ad6bba379e98d6724c",
+    "revision": "57419849fad9cab384634621fcbdf24d",
     "url": "/getting-to-know-jl/index.html"
   },
   {
-    "revision": "1f6069d6390c0bb89112",
-    "url": "/getting-to-know-jl/static/css/main.30982dd1.chunk.css"
+    "revision": "b52b8cc25eaf69c205cd",
+    "url": "/getting-to-know-jl/static/css/main.e5cb0fff.chunk.css"
   },
   {
     "revision": "76a403385353a72a4427",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/getting-to-know-jl/static/js/2.55da0553.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f6069d6390c0bb89112",
-    "url": "/getting-to-know-jl/static/js/main.f70db2fe.chunk.js"
+    "revision": "b52b8cc25eaf69c205cd",
+    "url": "/getting-to-know-jl/static/js/main.d2cf5a29.chunk.js"
   },
   {
     "revision": "978fd84c9290b0482a09",
