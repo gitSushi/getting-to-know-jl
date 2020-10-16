@@ -51,16 +51,23 @@ export const articles = [
     summary: "Closures : A quoi servent-elles ? Comment les utiliser ?"
   },
   {
-    title: "first-steps-tutorial on react-redux.js",
+    title: "First-steps-tutorial on react-redux.js",
     href: "https://github.com/gitSushi/first-steps-tutorial-on-react-redux",
     summary: "Un tutoriel simplifié sur Redux et React-Redux."
   },
   {
-    title: "redux illustrated",
+    title: "Redux illustrated",
     href:
       "https://redux-illustrated.blogspot.com/2020/07/redux-illustrated.html",
     summary:
       "Un tutoriel avancé analysant le fonctionnement du state de React et l'utilité de le remplacer par Redux."
+  },
+  {
+    title: "Data structures",
+    href:
+      "https://dev.to/gitsushi/data-structures-5cpj",
+    summary:
+      "Une série de diaporamas présentant différentes structures de données; leur définition et comment les implémenter en Javascript."
   }
 ];
 

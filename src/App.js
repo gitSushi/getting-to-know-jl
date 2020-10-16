@@ -408,40 +408,6 @@ function App() {
           </div>
         </div>
       </footer>
-      {/* <footer className="footer-contact">
-        <h2 className="section-border">
-          <svg
-            className="my-icon"
-            aria-hidden="true"
-            viewBox="0 0 600 600"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g>
-              <path d="M250,100 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
-              <path d="M76.8,333.3 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
-              <path d="M423.2,333.3 a16.67 16.67 0 1 1 100 0 q0,50 -50,66.67 q-50,-16.67 -50,-66.67 m-16.67,116.67 q-16.67,0 -16.67,-16.67 q0,-33.33 50,-33.33 q33.33,33.33 66.67,0 q50,0 50,33.33 q0,16.67 -16.67,16.67z" />
-              <path d="M204,185 a150 150 0 0 0 -50,80 l-29,-6 a170,170 0 0 1 63,-100 m208,26 a150,150 0 0 1 50,80 l29,-7 a170,170 0 0 0 -62,-98 m-47,276 a150,150 0 0 1 -132,0 l-15,24 a180,180 0 0 0 162,0z" />
-            </g>
-          </svg>{" "}
-          Contact
-        </h2>
-        <ul className="footer-ul">
-          {contacts.map((contact, index) => (
-            <div key={index}>
-              <li>
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={contact.href}
-                  title={contact.title}
-                >
-                  {contact.svg}
-                </a>
-              </li>
-            </div>
-          ))}
-        </ul>
-      </footer> */}
     </div>
   );
 }
