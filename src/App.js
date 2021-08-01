@@ -259,9 +259,10 @@ function App() {
             <li>Compétences (liste non exhaustive):
               <ul>
                 <li>HTML • CSS/Sass • Javascript</li>
-                <li>ReactJS</li>
-                <li>Redux/React-Readux</li>
-                <li>Python</li>
+                <li>ReactJS • Redux/React-Readux</li>
+                <li>Angular</li>
+                <li>PHP</li>
+                <li>Symfony</li>
               </ul>
             </li>
           </ul>
