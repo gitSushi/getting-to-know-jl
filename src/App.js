@@ -303,7 +303,7 @@ function App() {
               <footer className="project-footer">
                 {
                 project.demo === "" ? (
-                  <span>N/A</span>
+                  <span className="project-na-demo">N/A</span>
                 ) : (
                   <a
                   className="project-anchor-demo"

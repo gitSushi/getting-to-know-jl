@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Marck+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Marck+Script&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
   padding: 0.5em 4em;
   background-color: #291059; /* #422775 */
   color: var(--white-green);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -34,10 +34,10 @@ svg.svg-portrait {
   height: inherit;
 }
 .svg-portrait #left-index {
-	transform-origin: 66.5% 58%;
+  transform-origin: 66.5% 58%;
 }
 .svg-portrait #left-middle-finger {
-	transform-origin: 70% 60%;
+  transform-origin: 70% 60%;
 }
 
 header h1 {
@@ -117,7 +117,8 @@ section,
   text-decoration: none;
 }
 
-.project-anchor-demo {
+.project-anchor-demo,
+.project-na-demo {
   color: rgb(5, 252, 219);
 }
 
@@ -125,7 +126,8 @@ section,
   color: #fc05be;
 }
 
-.project-anchor-demo:hover, .project-anchor-repo:hover {
+.project-anchor-demo:hover,
+.project-anchor-repo:hover {
   color: #2cff00;
 }
 
@@ -195,8 +197,8 @@ h2 .article-parentheses {
 }
 
 .footer-contact > .container {
-	border-top: 1px solid var(--white-green);
-	padding-top: 1em;
+  border-top: 1px solid var(--white-green);
+  padding-top: 1em;
 }
 
 .container {
@@ -268,7 +270,7 @@ h2 .article-parentheses {
 
 .footer-div {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 
 .footer-ul {
@@ -296,7 +298,7 @@ h2 .article-parentheses {
 
 .signature {
   text-align: center;
-  font-family: 'Marck Script', cursive;
+  font-family: "Marck Script", cursive;
   font-size: 2em;
 }
 
@@ -338,6 +340,3 @@ h2 .article-parentheses {
     width: 100vmin;
   }
 }
-
-
-
