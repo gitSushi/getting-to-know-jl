@@ -301,7 +301,11 @@ function App() {
                 <img alt={project.alt} src={project.src} />
               </div>
               <footer className="project-footer">
-                <a
+                {
+                project.demo === "" ? (
+                  <span>N/A</span>
+                ) : (
+                  <a
                   className="project-anchor-demo"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -309,6 +313,8 @@ function App() {
                 >
                   demo live
                 </a>
+                )
+                }
                 <a
                   className="project-anchor-repo"
                   rel="noopener noreferrer"

@@ -28,7 +28,7 @@ export const projects = [
     title: "Planning in Love",
     src: "https://raw.githubusercontent.com/gitSushi/getting-to-know-jl/master/src/images/pil_kanban_board.png",
     alt: "Planning in Love",
-    demo: "N/A",
+    demo: "",
     repo: "https://github.com/gitSushi/planning-in-love"
   }
 ];
