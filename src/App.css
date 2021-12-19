@@ -286,6 +286,11 @@ h2 .article-parentheses {
   font-size: 2em;
 }
 
+.signature > span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8em;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0.5em;

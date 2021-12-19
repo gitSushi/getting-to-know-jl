@@ -71,6 +71,10 @@ section,
   text-indent: 0.5em;
 }
 
+.whatIAmUpTo {
+  color: #2cff00;
+}
+
 .my-icon {
   width: 32px;
   height: 32px;
@@ -300,6 +304,11 @@ h2 .article-parentheses {
   text-align: center;
   font-family: "Marck Script", cursive;
   font-size: 2em;
+}
+
+.signature > span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.5em;
 }
 
 @media (max-width: 768px) {
